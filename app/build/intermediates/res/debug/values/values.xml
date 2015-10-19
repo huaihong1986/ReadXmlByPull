@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/hahong/Desktop/android/ReadXmlByPull/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">使用pull解析xml文件</string>
+    <string name="hello">Hello World, Read!</string>
+</resources>
