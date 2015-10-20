@@ -25,6 +25,22 @@ public class Test extends InstrumentationTestCase {
 			Person person = (Person) iterator.next();
 			Log.v(PERSONSTRING, person.toString());
 		}
-		
 	}
+    //Must begin with test.
+    public void testRead() throws Exception
+    {//��װ����
+        InputStream inputStream=getInstrumentation().getTargetContext().getAssets().open("new_file.xml");
+
+
+        Log.v("abcd", ""+inputStream);
+        List<Person> personsList = ReadXmlByPullService.ReadXmlByPull(inputStream);
+        Log.v("abcd", personsList.get(0).getName());
+
+        for (Iterator iterator = personsList.iterator(); iterator.hasNext();) {
+            Person person = (Person) iterator.next();
+            Log.v(PERSONSTRING, person.toString());
+        }
+
+    }
+
 }
